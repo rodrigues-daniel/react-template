@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "\"app demo\"",
   "main": "index.js",
+  "private": "yes",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development && cp -R  ./dest/static  ~/repo/mvctodo/src/main/resources/public && cp -R  ./dest/index.html  ~/repo/mvctodo/src/main/resources/templates",
+    "clear": "rm -Rf  ./dest/*"
   },
   "author": "Daniel Rodrigues",
   "license": "ISC",
