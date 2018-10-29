@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "build-dev": "webpack --mode development && cp -R  ./dest/static  ~/repo/mvctodo/src/main/resources/public && cp -R  ./dest/index.html  ~/repo/mvctodo/src/main/resources/templates",
-    "clear": "rm -Rf  ./dest/*"
+    "clear": "rm -Rf  ./dest/*  && rm -Rf ~/repo/mvctodo/src/main/resources/public/* &&  rm ~/repo/mvctodo/src/main/resources/templates/*"
   },
   "author": "Daniel Rodrigues",
   "license": "ISC",
